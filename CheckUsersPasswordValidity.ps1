@@ -20,7 +20,7 @@ foreach ($User in $Users) {
 
     New-Object -TypeName psobject -Property @{
         Username = $Username
-        Passwrd = $Password
+        Password = $Password
         Validity = $Validity
     }
 

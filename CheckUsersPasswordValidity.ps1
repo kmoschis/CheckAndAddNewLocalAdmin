@@ -12,7 +12,7 @@ foreach ($User in $Users) {
         
         (New-Object DirectoryServices.DirectoryEntry "",$Username,$Password).psbase.name -ne $null
     }
-    $Validity = Test-ADAuthentication -username $UserName -password $Password
+    $Validity = Test-ADAuthentication -username $Username -password $Password
 
     #$Username
     #$Password
